@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Phone Case</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Design Your Phone Case</h1>
+    
+    <div class="controls">
+        <input type="file" id="imageLoader" accept="image/*">
+        <select id="phoneModelSelector">
+            <option value="iphone-13-pro_6.1">iPhone 13 Pro (6.1")</option>
+            <option value="iphone-13-pro-max_6.7">iPhone 13 Pro Max (6.7")</option>
+            <option value="samsung-galaxy-s22_6.1">Samsung Galaxy S22 (6.1")</option>
+            <option value="samsung-galaxy-s22-ultra_6.8">Samsung Galaxy S22 Ultra (6.8")</option>
+        </select>
+        <button id="finalizeButton">Finalize</button>
+        <button id="printButton">Print</button>
+    </div>
+
+    <canvas id="caseCanvas"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
